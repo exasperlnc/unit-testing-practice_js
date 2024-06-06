@@ -6,6 +6,15 @@ function startGPS(current_location, new_location) {
   }
 }
 
+function createUser(firstName, lastName, birthDate){
+  return {
+    firstName: firstName,
+    lastName: lastName,
+    birthDate: birthDate,
+    onlineStatus: false
+  };
+}
+
 module.exports = {
   startGPS,
   createUser,
