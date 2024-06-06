@@ -57,7 +57,7 @@ describe('practice', function () {
   });
 
   describe('makePizza', function() {
-    it.skip('should be able to cook our pizza', function() {
+    it('should be able to cook our pizza', function() {
       var pizza = { toppings: [], cooked: false };
 
       makePizza(pizza);
@@ -65,7 +65,7 @@ describe('practice', function () {
       assert.equal(pizza.cooked, true);
     })
 
-    it.skip('should add toppings to our pizza', function() {
+    it('should add toppings to our pizza', function() {
       var pizza = { toppings: [], cooked: false };
 
       makePizza(pizza, 'cheese');
@@ -80,7 +80,7 @@ describe('practice', function () {
       assert.deepEqual(pizza.toppings, ['cheese', 'pepperoni', 'jalapenos', 'pineapple']);
     });
 
-    it.skip('should not be able to have more than 5 toppings', function() {
+    it('should not be able to have more than 5 toppings', function() {
       var pizza = { toppings: [], cooked: false };
 
       makePizza(pizza, 'cheese');

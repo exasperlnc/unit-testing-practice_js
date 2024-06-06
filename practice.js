@@ -15,9 +15,16 @@ function createUser(firstName, lastName, birthDate){
   };
 }
 
+function makePizza(pizza, topping){
+  pizza.cooked = true
+  if(pizza.toppings.length < 5){
+    pizza.toppings.push(topping);
+  }
+}
+
 module.exports = {
   startGPS,
   createUser,
-  // makePizza,
+  makePizza
   // findRemainder
 }
